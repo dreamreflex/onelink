@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+const html = `<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
@@ -172,4 +172,14 @@
     </div>
 
 </body>
-</html>
+</html>`;
+
+export default {
+  async fetch(request, env) {
+    return new Response(html, {
+      headers: {
+        'content-type': 'text/html;charset=UTF-8',
+      },
+    });
+  },
+};
