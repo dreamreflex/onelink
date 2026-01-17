@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>drf.one - 短链服务说明</title>
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #333333;
+            --secondary-text: #666666;
+            --border-color: #e0e0e0;
+            --accent-color: #007bff;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 2rem;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        h1 {
+            font-weight: 300;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            flex: 1;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .column {
+            flex: 1;
+            min-width: 300px;
+            padding: 3rem 2rem;
+            border-right: 1px solid var(--border-color);
+            box-sizing: border-box;
+        }
+
+        .column:last-child {
+            border-right: none;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border-color);
+            display: inline-block;
+        }
+
+        p {
+            color: var(--secondary-text);
+            font-size: 0.95rem;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 1rem;
+        }
+
+        a {
+            color: var(--text-color);
+            text-decoration: none;
+            transition: color 0.2s;
+            display: block;
+        }
+
+        a:hover {
+            color: var(--accent-color);
+            text-decoration: underline;
+        }
+
+        .project-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .project-title {
+            font-weight: 500;
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+
+        .project-desc {
+            font-size: 0.85rem;
+            color: var(--secondary-text);
+        }
+
+        footer {
+            padding: 2rem;
+            text-align: center;
+            border-top: 1px solid var(--border-color);
+            color: var(--secondary-text);
+            font-size: 0.85rem;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 900px) {
+            .column {
+                border-right: none;
+                border-bottom: 1px solid var(--border-color);
+            }
+            .column:last-child {
+                border-bottom: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>drf.one</h1>
+    </header>
+
+    <div class="container">
+        <!-- 第一栏：这是什么 -->
+        <div class="column">
+            <h2>这是什么？</h2>
+            <p>您好，您目前直接访问了 <strong>drf.one</strong> 的根域名。</p>
+            <p>这是一个<strong>云门镜像营销短链接服务</strong>域名，通常用于将较长的 URL 缩短以便于分享。</p>
+            <p>如果您看到了这个页面，说明您可能输入了一个不完整的链接，或者该短链已被重置。</p>
+            <p>请检查您的链接是否包含后缀，例如 <code>drf.one/xxxx</code>。</p>
+        </div>
+
+        <!-- 第二栏：常用链接 -->
+        <div class="column">
+            <h2>常用链接</h2>
+            <ul>
+                <li><a href="https://dreamreflex.tech" target="_blank">DreamReflex 官网 &rarr;</a></li>
+                <li><a href="#" target="_blank">官方文档 &rarr;</a></li>
+                <li><a href="#" target="_blank">服务状态监控 &rarr;</a></li>
+                <li><a href="#" target="_blank">联系支持 &rarr;</a></li>
+                <li><a href="#" target="_blank">关于我们 &rarr;</a></li>
+            </ul>
+        </div>
+
+        <!-- 第三栏：公开项目 -->
+        <div class="column">
+            <h2>您可能感兴趣</h2>
+            <div class="project-item">
+                <a href="https://github.com/dreamreflex/serverlesslize" target="_blank" class="project-title">S12E社区计划</a>
+                <span class="project-desc">通过Serverless转型专注于提高传统应用的分布式部署能力和抗打击能力</span>
+            </div>
+            <div class="project-item">
+                <a href="mailto:contact@dreamreflex.com" class="project-title">快速接入安全防护</a>
+                <span class="project-desc">当您的应用正在遭遇攻击，需要安全防护，可以快速接入我们的安全防护计划</span>
+            </div>
+            <div class="project-item">
+                <a href="https://github.com/dreamreflex" target="_blank" class="project-title">开源社区</a>
+                <span class="project-desc">我们的开源社区，为开发者提供了丰富的资源和支持</span>
+            </div>
+        </div>
+    </div>
+    
+        <footer>
+            &copy; 2026 DreamReflex Tech. <br> 短链服务
+        </footer>
+
+</body>
+</html>
